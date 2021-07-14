@@ -4,14 +4,20 @@
   <meta charset="utf-8">
   
   
-  <title>Archives | Hexo</title>
+  <title>变量与常量 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://errormaker1.github.io/archives/index.html">
+  <meta name="description" content="$var &#x3D;                      对变量var定义unset（变量名字）            删除变量   变量传值一共有两种方式：值传递，引用传递值传递：($a &#x3D; $b)将变量保存的值复制一份，并将该值给另外一个变量保存(两个变量无关系)引用传递：($a &#x3D; &amp;$b)将变量保存值所在的内存地址传递给另外一个变量，两个变量同指一块内存（名字不一样而已）。 定义常量">
+<meta property="og:type" content="article">
+<meta property="og:title" content="变量与常量">
+<meta property="og:url" content="http://errormaker1.github.io/2021/07/14/%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B8%B8%E9%87%8F/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="$var &#x3D;                      对变量var定义unset（变量名字）            删除变量   变量传值一共有两种方式：值传递，引用传递值传递：($a &#x3D; $b)将变量保存的值复制一份，并将该值给另外一个变量保存(两个变量无关系)引用传递：($a &#x3D; &amp;$b)将变量保存值所在的内存地址传递给另外一个变量，两个变量同指一块内存（名字不一样而已）。 定义常量">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-07-14T06:03:30.000Z">
+<meta property="article:modified_time" content="2021-07-14T06:15:15.567Z">
 <meta property="article:author" content="柯艺阳">
+<meta property="article:tag" content="变量">
+<meta property="article:tag" content="常量">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -69,58 +75,63 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/07/14/%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B8%B8%E9%87%8F/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-07-14T06:03:30.000Z" itemprop="datePublished">Jul 14</time>
+        <section id="main"><article id="post-变量与常量" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/07/14/%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B8%B8%E9%87%8F/" class="article-date">
+  <time class="dt-published" datetime="2021-07-14T06:03:30.000Z" itemprop="datePublished">2021-07-14</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/07/14/%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B8%B8%E9%87%8F/">变量与常量</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      变量与常量
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/07/12/%E5%88%9D%E6%AD%A5%E8%AE%A4%E8%AF%86php/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-07-12T14:26:04.000Z" itemprop="datePublished">Jul 12</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/07/12/%E5%88%9D%E6%AD%A5%E8%AE%A4%E8%AF%86php/">了解web基础</a>
-    </h1>
-  
+        <p><em>$var =                      对变量var定义</em><br><em>unset（变量名字）            删除变量</em></p>
+<hr/>
 
-    </header>
+<p>变量传值一共有两种方式：<strong>值传递，引用传递</strong><br><strong>值传递</strong>：($a = $b)将变量保存的值复制一份，并将该值给另外一个变量保存(两个变量无关系)<br><strong>引用传递</strong>：($a = &amp;$b)将变量保存值所在的内存地址传递给另外一个变量，两个变量同指一块内存（名字不一样而已）。</p>
+<p><strong>定义常量</strong><br>1、<strong>define(‘常量名’，常量值)</strong><br>2、<strong>const 常量名=值</strong><br>常量的使用和变量一样，但不可改变值，在定义的时候就要进行赋值，在对特殊名字进行访问的时候不能用echo直接输出，要用访问常量函数：constant(‘常量名’)<br><strong>魔术常量</strong>：由双下划线+常量名+双下划线组成，其值会随着环境变化而变化，我们无法改变。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://errormaker1.github.io/2021/07/14/%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B8%B8%E9%87%8F/" data-id="ckr333taf0000a8vs5vzdfivr" data-title="变量与常量" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8F%98%E9%87%8F/" rel="tag">变量</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B8%B8%E9%87%8F/" rel="tag">常量</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2021/07/12/%E5%88%9D%E6%AD%A5%E8%AE%A4%E8%AF%86php/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">了解web基础</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>
