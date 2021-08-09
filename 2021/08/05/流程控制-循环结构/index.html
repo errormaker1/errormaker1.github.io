@@ -4,14 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>Archives: 2021 | Hexo</title>
+  <title>流程控制-循环结构 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://errormaker1.github.io/archives/2021/index.html">
+  <meta name="description" content="代码段再一定的控制下，可以多次执行For循环、while循环、do-while循环、foreach循环 For循环基本语法：for（条件表达式1：基本表达式2：条件表达式3）{        &#x2F;&#x2F;条件表达式1：定义初始化条件，可以有多种赋值语句存在，使用逗号分隔即可&#x2F;&#x2F;条件表达式2：边界判定，限制循环执行的次数&#x2F;&#x2F;条件表达式3：用来执行条件变化&#x2F;&#x2F;循环体}1、执行条件表示式1：定义初始化条件（只有">
+<meta property="og:type" content="article">
+<meta property="og:title" content="流程控制-循环结构">
+<meta property="og:url" content="http://errormaker1.github.io/2021/08/05/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="代码段再一定的控制下，可以多次执行For循环、while循环、do-while循环、foreach循环 For循环基本语法：for（条件表达式1：基本表达式2：条件表达式3）{        &#x2F;&#x2F;条件表达式1：定义初始化条件，可以有多种赋值语句存在，使用逗号分隔即可&#x2F;&#x2F;条件表达式2：边界判定，限制循环执行的次数&#x2F;&#x2F;条件表达式3：用来执行条件变化&#x2F;&#x2F;循环体}1、执行条件表示式1：定义初始化条件（只有">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-08-05T03:04:59.000Z">
+<meta property="article:modified_time" content="2021-08-09T03:07:38.454Z">
 <meta property="article:author" content="柯艺阳">
+<meta property="article:tag" content="循环结构">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -69,153 +74,76 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/08/09/%E5%87%BD%E6%95%B0/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-08-09T03:12:19.000Z" itemprop="datePublished">Aug 9</time>
+        <section id="main"><article id="post-流程控制-循环结构" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/08/05/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/" class="article-date">
+  <time class="dt-published" datetime="2021-08-05T03:04:59.000Z" itemprop="datePublished">2021-08-05</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/PHP/">PHP</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/09/%E5%87%BD%E6%95%B0/">函数</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      流程控制-循环结构
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/08/07/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-08-07T03:06:01.000Z" itemprop="datePublished">Aug 7</time>
-</a>
+    <div class="e-content article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/07/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/">文件包含</a>
-    </h1>
-  
+        <p>代码段再一定的控制下，可以多次执行<br>For循环、while循环、do-while循环、foreach循环</p>
+<p><em><strong>For循环</strong></em><br><strong>基本语法：</strong>for（条件表达式1：基本表达式2：条件表达式3）{<br>        //条件表达式1：定义初始化条件，可以有多种赋值语句存在，使用逗号分隔即可<br>//条件表达式2：边界判定，限制循环执行的次数<br>//条件表达式3：用来执行条件变化<br>//循环体<br>}<br>1、执行条件表示式1：定义初始化条件（只有一次）<br>2、执行条件表达式2：判断条件N次<br>   2.1满足：执行循环体<br>   2.2不满足条件：循环结束<br>3、执行循环体（n次）<br>4、执行条件表达式3：循环变量变化<br>5、重复2-4<br>For循环特殊使用：for循环中对应的括号（条件）可以一个都没有（死循环）<br>For（；；）{</p>
+<p>}</p>
+<p><em><strong>While循环</strong></em><br><strong>基本语法：</strong><br>条件初始化；<br>while（条件表达式）{<br>     //条件表达式就是判断边界条件<br>    循环体；   //循环条件的变化<br>}<br>For与while的选择<br>1、如果是基于固定已知条件（数值而且是有规律的变化），用for循环<br>2、While可以做灵活的条件判定（while使用的比较多）</p>
+<p><em><strong>Do-while循环</strong></em><br>看着很像while，while先进行条件判定然后执行循环体，有可能出现第一次就条件不满足，那么就会直接失败（循环体一次都不执行）。Do-while就是先执行循环体后判断条件（至少执行一次循环体）</p>
+<p><strong>Do-while基本语法</strong><br>do{<br>   //循环体<br>}while（条件表达式）；</p>
+<p>循环结构<br>循环控制：在循环内部对循环本身进行控制<br>中断控制：重新开始循环，循环体中还有其他内容，也不再执行<br>Continue层级：//默认是1（循环可以多层嵌套）</p>
+<p>中止控制：循环直接结束<br>Break层级；//默认是1</p>
+<p>因为循环经常性会碰到嵌套（循环中间包含循环），如果在循环内部有些条件下，明确可以知道当前循环（或者说外部循环）不需要继续执行了，那么就可以使用循环控制来实现：其中内部循环也可以控制到外部，就是通过使用层级参数。<br>Continue2； 当前自己循环后面内部不再执行，同时外部循环如果还有循环体也不再执行，重新来过<br>Break2；当前自己循环结束，外部也结束</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/08/05/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-08-05T03:04:59.000Z" itemprop="datePublished">Aug 5</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/05/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/">流程控制-循环结构</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/08/01/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6-%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-08-01T06:04:23.000Z" itemprop="datePublished">Aug 1</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://errormaker1.github.io/2021/08/05/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6-%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/" data-id="cks421dl40000j8vs1ct79ach" data-title="流程控制-循环结构" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/08/01/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6-%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84/">流程控制-分支结构</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/07/25/%E6%95%B0%E6%8D%AE%E4%B8%8E%E8%BF%90%E7%AE%97%E7%AC%A6/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-07-25T05:09:53.000Z" itemprop="datePublished">Jul 25</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/07/25/%E6%95%B0%E6%8D%AE%E4%B8%8E%E8%BF%90%E7%AE%97%E7%AC%A6/">数据与运算符</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/07/14/%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B8%B8%E9%87%8F/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-07-14T06:03:30.000Z" itemprop="datePublished">Jul 14</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/07/14/%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B8%B8%E9%87%8F/">变量与常量</a>
-    </h1>
-  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/" rel="tag">循环结构</a></li></ul>
 
-    </header>
+    </footer>
   </div>
-</article>
   
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2021/07/12/%E5%88%9D%E6%AD%A5%E8%AE%A4%E8%AF%86php/" class="archive-article-date">
-  <time class="dt-published" datetime="2021-07-12T14:26:04.000Z" itemprop="datePublished">Jul 12</time>
-</a>
-      
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/07/12/%E5%88%9D%E6%AD%A5%E8%AE%A4%E8%AF%86php/">了解web基础</a>
-    </h1>
+    <a href="/2021/08/07/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          文件包含
+        
+      </div>
+    </a>
   
+  
+    <a href="/2021/08/01/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6-%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">流程控制-分支结构</div>
+    </a>
+  
+</nav>
 
-    </header>
-  </div>
+  
 </article>
-  
-  
-    </div></section>
-  
 
 
 </section>
